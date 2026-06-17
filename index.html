@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Isla de las Emociones</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
 padding:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(#87CEEB,#B5EAD7);
+font-family:'Fredoka',sans-serif;
+background:linear-gradient(to bottom,#8FD7EE,#B8F0D7);
 text-align:center;
 min-height:100vh;
 }
 
 .contenedor{
-padding:30px;
+padding:30px 20px;
 }
 
 h1{
-color:#0F4C81;
-font-size:48px;
-}
-
-p{
-font-size:24px;
-color:#333;
+font-size:56px;
+color:#184A8B;
+margin-bottom:25px;
+font-weight:600;
 }
 
 .emoti{
-width:250px;
-margin-top:20px;
+width:240px;
+max-width:80%;
+margin-bottom:25px;
+filter:drop-shadow(0 8px 15px rgba(0,0,0,0.15));
+}
+
+.saludo{
+color:white;
+font-size:32px;
+font-weight:500;
+text-shadow:0 3px 6px rgba(0,0,0,0.15);
+margin-bottom:15px;
+}
+
+.texto{
+color:white;
+font-size:26px;
+font-weight:500;
+text-shadow:0 3px 6px rgba(0,0,0,0.15);
+margin:10px 0;
+}
+
+.botones{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:18px;
+align-items:center;
 }
 
 .boton{
-display:block;
-width:280px;
-margin:15px auto;
-padding:18px;
-font-size:22px;
+width:320px;
+max-width:90%;
+padding:20px;
 border:none;
-border-radius:20px;
-cursor:pointer;
+border-radius:25px;
+font-family:'Fredoka',sans-serif;
+font-size:22px;
+font-weight:600;
 color:white;
-font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.boton:hover{
+transform:scale(1.03);
 }
 
 .sol{
-background:#FDB813;
+background:#FDBB11;
 }
 
 .nube{
@@ -56,19 +90,18 @@ background:#7EB8DA;
 }
 
 .volcan{
-background:#D96C3F;
+background:#D96E3D;
 }
 
 .luna{
-background:#8A7CFF;
+background:#8673F2;
 }
 
 .verdi{
-background:#68C26A;
+background:#6CC36C;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -80,19 +113,21 @@ background:#68C26A;
 <img
 class="emoti"
 src="archivo_00000000d820720e87d3c435524a1982.png"
->
+alt="Emoti">
 
-<p>
-Hola explorador 👋
-</p>
+<div class="saludo">
+👋 ¡Hola explorador!
+</div>
 
-<p>
-Soy Emoti.
-</p>
+<div class="texto">
+✨ Soy Emoti
+</div>
 
-<p>
-¿Cómo te sientes hoy?
-</p>
+<div class="texto">
+🌈 ¿Qué emoción te acompaña hoy?
+</div>
+
+<div class="botones">
 
 <button class="boton sol">
 ☀️ Me siento feliz
@@ -113,6 +148,8 @@ Soy Emoti.
 <button class="boton verdi">
 🌿 Necesito calma
 </button>
+
+</div>
 
 </div>
 
