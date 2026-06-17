@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Luni</title><style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(#A78BFA,#C4B5FD);
+text-align:center;
+min-height:100vh;
+}
+
+.contenedor{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+color:white;
+font-size:50px;
+}
+
+.personaje{
+width:250px;
+margin:20px auto;
+display:block;
+}
+
+.texto{
+font-size:26px;
+font-weight:bold;
+color:white;
+line-height:1.5;
+}
+
+.opciones{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+button{
+padding:20px;
+border:none;
+border-radius:20px;
+font-size:22px;
+font-weight:bold;
+background:white;
+}
+
+.resultado{
+margin-top:30px;
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+.volver{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:white;
+color:#6D4CDB;
+text-decoration:none;
+border-radius:20px;
+font-weight:bold;
+}
+
+</style><script>
+
+function responder(texto){
+document.getElementById("resultado").innerHTML=texto;
+}
+
+</script></head><body><div class="contenedor"><h1>🌙 Luni</h1><img class="personaje"
+src="file_000000002c1471f592c0e0da16fb556a.png">
+
+<div class="texto">A veces sentir tristeza está bien.
+
+¿Qué necesita tu corazón hoy?
+
+</div><div class="opciones"><button onclick="responder('💜 Los abrazos pueden ayudarnos mucho.')">
+Un abrazo
+</button><button onclick="responder('🌙 Descansar también es importante.')">
+Descansar
+</button><button onclick="responder('🦋 Buscar compañía puede hacernos sentir mejor.')">
+Compañía
+</button></div><div id="resultado" class="resultado"></div><a class="volver" href="index.html">
+Volver a la Isla
+</a></div></body>
+</html>
