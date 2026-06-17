@@ -1,88 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Isla de las Emociones</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
 padding:0;
-font-family:'Fredoka',sans-serif;
-background:linear-gradient(to bottom,#8FD7EE,#B8F0D7);
+font-family:'Trebuchet MS', sans-serif;
+background:linear-gradient(#87CEEB,#B5EAD7);
 text-align:center;
 min-height:100vh;
 }
 
 .contenedor{
-padding:30px 20px;
+padding:40px 20px;
 }
 
 h1{
-font-size:42px;
-color:#184A8B;
-font-weight:600;
+font-size:70px;
+color:#173F8A;
 margin-bottom:20px;
+font-weight:900;
 }
 
-.emoti{
-width:240px;
-max-width:80%;
-margin-bottom:20px;
-filter:drop-shadow(0 8px 15px rgba(0,0,0,0.15));
+.emoticonos{
+width:180px;
+margin:10px auto 20px;
+display:block;
 }
 
 .saludo{
+font-size:38px;
+font-weight:bold;
 color:white;
-font-size:30px;
-font-weight:600;
-text-shadow:0 3px 6px rgba(0,0,0,0.15);
-margin-bottom:12px;
+margin-top:10px;
+text-shadow:0 4px 8px rgba(0,0,0,0.15);
 }
 
 .texto{
+font-size:28px;
+font-weight:bold;
 color:white;
-font-size:24px;
-font-weight:500;
-text-shadow:0 3px 6px rgba(0,0,0,0.15);
-margin:10px 0;
+margin-top:15px;
+text-shadow:0 4px 8px rgba(0,0,0,0.15);
 }
 
 .botones{
-margin-top:30px;
+margin-top:35px;
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:18px;
+gap:22px;
 }
 
 .boton{
-width:320px;
+width:420px;
 max-width:90%;
-padding:20px;
+padding:24px;
 border:none;
 border-radius:25px;
-font-family:'Fredoka',sans-serif;
-font-size:22px;
-font-weight:600;
+font-size:24px;
+font-weight:bold;
 color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 cursor:pointer;
-box-shadow:0 8px 16px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.boton:hover{
-transform:scale(1.03);
 }
 
 .sol{
-background:#FDBB11;
+background:#FFC107;
 }
 
 .nube{
@@ -90,14 +79,14 @@ background:#7EB8DA;
 }
 
 .volcan{
-background:#D96E3D;
+background:#D96F3C;
 }
 
 .luna{
-background:#8673F2;
+background:#8573E8;
 }
 
-.verdi{
+.verde{
 background:#6CC36C;
 }
 
@@ -111,8 +100,8 @@ background:#6CC36C;
 <h1>🏝️ Isla de las Emociones</h1>
 
 <img
-class="emoti"
-src="archivo_00000000d820720e87d3c435524a1982.png"
+class="emoticonos"
+src="file_00000000d820720e87d3c435524a1982.png"
 alt="Emoti">
 
 <div class="saludo">
@@ -145,7 +134,7 @@ Soy Emoti
 🌙 Me siento triste
 </button>
 
-<button class="boton verdi">
+<button class="boton verde">
 🌿 Necesito calma
 </button>
 
