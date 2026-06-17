@@ -25,30 +25,30 @@ padding:30px 20px;
 }
 
 h1{
-font-size:56px;
+font-size:42px;
 color:#184A8B;
-margin-bottom:25px;
 font-weight:600;
+margin-bottom:20px;
 }
 
 .emoti{
 width:240px;
 max-width:80%;
-margin-bottom:25px;
+margin-bottom:20px;
 filter:drop-shadow(0 8px 15px rgba(0,0,0,0.15));
 }
 
 .saludo{
 color:white;
-font-size:32px;
-font-weight:500;
+font-size:30px;
+font-weight:600;
 text-shadow:0 3px 6px rgba(0,0,0,0.15);
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .texto{
 color:white;
-font-size:26px;
+font-size:24px;
 font-weight:500;
 text-shadow:0 3px 6px rgba(0,0,0,0.15);
 margin:10px 0;
@@ -58,14 +58,103 @@ margin:10px 0;
 margin-top:30px;
 display:flex;
 flex-direction:column;
-gap:18px;
 align-items:center;
+gap:18px;
 }
 
 .boton{
 width:320px;
 max-width:90%;
 padding:20px;
+border:none;
+border-radius:25px;
+font-family:'Fredoka',sans-serif;
+font-size:22px;
+font-weight:600;
+color:white;
+cursor:pointer;
+box-shadow:0 8px 16px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.boton:hover{
+transform:scale(1.03);
+}
+
+.sol{
+background:#FDBB11;
+}
+
+.nube{
+background:#7EB8DA;
+}
+
+.volcan{
+background:#D96E3D;
+}
+
+.luna{
+background:#8673F2;
+}
+
+.verdi{
+background:#6CC36C;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🏝️ Isla de las Emociones</h1>
+
+<img
+class="emoti"
+src="archivo_00000000d820720e87d3c435524a1982.png"
+alt="Emoti">
+
+<div class="saludo">
+👋 ¡Hola explorador!
+</div>
+
+<div class="texto">
+Soy Emoti
+</div>
+
+<div class="texto">
+¿Qué emoción te acompaña hoy?
+</div>
+
+<div class="botones">
+
+<button class="boton sol">
+☀️ Me siento feliz
+</button>
+
+<button class="boton nube">
+☁️ Me siento preocupado
+</button>
+
+<button class="boton volcan">
+🌋 Me siento enojado
+</button>
+
+<button class="boton luna">
+🌙 Me siento triste
+</button>
+
+<button class="boton verdi">
+🌿 Necesito calma
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>padding:20px;
 border:none;
 border-radius:25px;
 font-family:'Fredoka',sans-serif;
