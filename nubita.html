@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
-<title>Isla de Nubita</title>
+<title>Nubita</title>
 
 <style>
 
 body{
 margin:0;
-padding:0;
-font-family:'Trebuchet MS',sans-serif;
-background:linear-gradient(#87CEEB,#DDF5FF);
+padding:20px;
+font-family:Arial,sans-serif;
+background:linear-gradient(#DDF6FF,#BEEBFF);
 text-align:center;
-min-height:100vh;
 }
 
-.contenedor{
-padding:40px 20px;
+.personaje{
+width:240px;
+margin-top:20px;
 }
 
 h1{
-font-size:60px;
-color:#4A7FB3;
-font-weight:900;
+color:#5FAFD6;
+font-size:42px;
+margin-top:10px;
 }
 
-.nubita{
-width:220px;
-margin:30px auto;
-display:block;
+.texto{
+font-size:24px;
+color:#4F7FA0;
+font-weight:bold;
+margin:25px;
 }
 
-.mensaje{
+.tarjeta{
+background:white;
+padding:25px;
+border-radius:25px;
 max-width:700px;
 margin:auto;
-font-size:28px;
-font-weight:bold;
-color:white;
-line-height:1.6;
-text-shadow:0 4px 8px rgba(0,0,0,0.15);
+box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
 
 .boton{
-margin-top:40px;
-background:#7EB8DA;
+display:inline-block;
+margin-top:25px;
+padding:16px 28px;
+background:#7EC8E3;
 color:white;
-font-size:26px;
+text-decoration:none;
+border-radius:18px;
+font-size:22px;
 font-weight:bold;
-border:none;
-padding:22px 40px;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 </style>
@@ -60,37 +59,42 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 
 <body>
 
-<div class="contenedor">
-
-<h1>☁️ Isla de Nubita</h1>
-
 <img
-class="nubita"
-src="file_00000000221c71f5a82d5fc77a7147cd.png"
-alt="Nubita">
+class="personaje"
+src="file_00000000221c71f5a82d5fc77a7147cd.png">
 
-<div class="mensaje">
+<h1>☁️ Nubita</h1>
 
-Hola, soy Nubita ☁️
+<div class="tarjeta">
 
-<br><br>
-
-A veces nuestra mente se llena de pensamientos
-que nos preocupan.
-
-<br><br>
-
-Pero no estás solo.
-
-<br><br>
-
-Vamos a respirar juntos.
-
+<div class="texto">
+Respiremos juntos...
 </div>
 
-<button class="boton">
-🌈 Respirar con Nubita
-</button>
+<p style="font-size:22px;">
+Inhalá lentamente por la nariz.
+</p>
+
+<p style="font-size:22px;">
+1... 2... 3...
+</p>
+
+<p style="font-size:22px;">
+Exhalá suavemente por la boca.
+</p>
+
+<p style="font-size:22px;">
+1... 2... 3...
+</p>
+
+<p style="font-size:22px;">
+Las nubes pasan...
+y las preocupaciones también.
+</p>
+
+<a class="boton" href="index.html">
+Volver a la Isla
+</a>
 
 </div>
 
