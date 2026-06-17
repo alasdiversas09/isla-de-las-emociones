@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdi</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(#CFF5C7,#A7E89D);
+text-align:center;
+min-height:100vh;
+}
+
+.contenedor{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+font-size:50px;
+color:white;
+}
+
+.personaje{
+width:250px;
+margin:20px auto;
+display:block;
+}
+
+.texto{
+font-size:26px;
+color:white;
+font-weight:bold;
+line-height:1.5;
+}
+
+button{
+width:100%;
+max-width:500px;
+padding:18px;
+margin:10px auto;
+display:block;
+border:none;
+border-radius:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+.resultado{
+margin-top:25px;
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+.volver{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:white;
+border-radius:20px;
+text-decoration:none;
+font-weight:bold;
+color:#4C9A4C;
+}
+
+</style>
+
+<script>
+
+function responder(texto){
+document.getElementById("resultado").innerHTML=texto;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>🌿 Verdi</h1>
+
+<img
+class="personaje"
+src="file_000000006854720e90d86e77a8d426ce.png">
+
+<div class="texto">
+
+Respiremos juntos.
+
+¿Qué te ayudaría a sentir más calma?
+
+</div>
+
+<button onclick="responder('🌿 Excelente elección. Respirar profundo ayuda a nuestro cuerpo.')">
+Respirar profundo
+</button>
+
+<button onclick="responder('🎵 La música tranquila puede ayudarnos mucho.')">
+Escuchar música
+</button>
+
+<button onclick="responder('🌳 Imaginar un lugar seguro puede generar calma.')">
+Imaginar un lugar tranquilo
+</button>
+
+<div id="resultado" class="resultado"></div>
+
+<a href="index.html" class="volver">
+Volver a la Isla
+</a>
+
+</div>
+
+</body>
+</html>
