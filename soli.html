@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soli</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(#FFE88A,#FFD15A);
+text-align:center;
+min-height:100vh;
+}
+
+.contenedor{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+font-size:50px;
+color:white;
+}
+
+.personaje{
+width:250px;
+margin:20px auto;
+display:block;
+}
+
+.texto{
+font-size:26px;
+color:white;
+font-weight:bold;
+line-height:1.5;
+}
+
+button{
+width:100%;
+max-width:500px;
+padding:18px;
+margin:10px auto;
+display:block;
+border:none;
+border-radius:20px;
+font-size:22px;
+font-weight:bold;
+}
+
+.resultado{
+margin-top:25px;
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+.volver{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:white;
+border-radius:20px;
+text-decoration:none;
+font-weight:bold;
+color:#D89A00;
+}
+
+</style>
+
+<script>
+
+function responder(texto){
+document.getElementById("resultado").innerHTML=texto;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>☀️ Soli</h1>
+
+<img
+class="personaje"
+src="file_00000000a96c720e8732e4b1e31b1b7d.png">
+
+<div class="texto">
+
+¡Qué lindo verte!
+
+¿Qué te hace sentir alegría?
+
+</div>
+
+<button onclick="responder('🎉 Compartir momentos felices hace crecer la alegría.')">
+Jugar con amigos
+</button>
+
+<button onclick="responder('💛 La familia puede llenar nuestro corazón de alegría.')">
+Estar con mi familia
+</button>
+
+<button onclick="responder('🌈 ¡Qué hermoso! Hacer lo que te gusta también es alegría.')">
+Hacer algo que me gusta
+</button>
+
+<div id="resultado" class="resultado"></div>
+
+<a href="index.html" class="volver">
+Volver a la Isla
+</a>
+
+</div>
+
+</body>
+</html>
