@@ -1,147 +1,121 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html lang="es"><head>
 <meta charset="UTF-8">
-<title>Isla de las Emociones</title>
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isla de las Emociones</title><style>
 
 body{
 margin:0;
 padding:0;
-font-family:'Trebuchet MS', sans-serif;
-background:linear-gradient(#87CEEB,#B5EAD7);
-text-align:center;
+font-family:Arial,sans-serif;
+background:linear-gradient(to bottom,#8FD7EE,#B8F0D7);
 min-height:100vh;
+text-align:center;
 }
 
 .contenedor{
-padding:40px 20px;
+padding:20px;
+max-width:1200px;
+margin:auto;
 }
 
-h1{
-font-size:70px;
-color:#173F8A;
-margin-bottom:40px;
+.titulo{
+font-size:48px;
 font-weight:900;
-}
-
-.saludo{
-font-size:38px;
-font-weight:bold;
-color:white;
-margin-top:10px;
-text-shadow:0 4px 8px rgba(0,0,0,0.15);
-}
-
-.texto{
-font-size:28px;
-font-weight:bold;
-color:white;
+color:#1F4F8C;
 margin-top:20px;
-text-shadow:0 4px 8px rgba(0,0,0,0.15);
 }
 
-.emoticonos{
-width:180px;
-margin:35px auto 60px;
+.subtitulo{
+font-size:28px;
+color:white;
+font-weight:bold;
+margin-top:10px;
+}
+
+.emoti{
+width:220px;
+margin:20px auto;
 display:block;
 }
 
-.botones{
-margin-top:20px;
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:22px;
-}
-
-.boton{
-width:420px;
-max-width:90%;
-padding:24px;
-border:none;
-border-radius:25px;
-font-size:24px;
+.pregunta{
+font-size:30px;
 font-weight:bold;
 color:white;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-cursor:pointer;
+margin-top:30px;
+margin-bottom:30px;
 }
 
-.sol{
-background:#FFC107;
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding-bottom:40px;
 }
 
-.nube{
-background:#7EB8DA;
+.tarjeta{
+background:white;
+border-radius:25px;
+padding:20px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
 }
 
-.volcan{
-background:#D96F3C;
+.tarjeta:hover{
+transform:translateY(-5px);
 }
 
-.luna{
-background:#8573E8;
+.tarjeta img{
+width:140px;
+height:auto;
 }
 
-.verde{
-background:#6CC36C;
+.nombre{
+font-size:24px;
+font-weight:bold;
+margin-top:10px;
+color:#1F4F8C;
 }
 
-</style>
+.emocion{
+font-size:18px;
+margin-top:5px;
+color:#5A6B7B;
+}
 
-</head>
-
-<body>
-
-<div class="contenedor">
-
-<h1>🏝️ Isla de las Emociones</h1>
-
-<div class="saludo">
-👋 ¡Hola explorador!
-</div>
-
-<div class="texto">
-Soy Emoti
-</div>
-
-<img
-class="emoticonos"
+</style></head><body><div class="contenedor"><div class="titulo">
+🏝️ Isla de las Emociones
+</div><div class="subtitulo">
+¡Hola explorador!
+</div><img
+class="emoti"
 src="file_00000000d820720e87d3c435524a1982.png"
 alt="Emoti">
 
-<div class="texto">
+<div class="subtitulo">
+Soy Emoti
+</div><div class="pregunta">
 ¿Qué emoción te acompaña hoy?
-</div>
-
-<div class="botones">
-
-<button class="boton sol">
-☀️ Me siento feliz
-</button>
-
-<button class="boton nube" onclick="window.location.href='nubita.html'">
-☁️ Me siento preocupado
-</button>
-
-<button class="boton volcan">
-🌋 Me siento enojado
-</button>
-
-<button class="boton luna">
-🌙 Me siento triste
-</button>
-
-<button class="boton verde">
-🌿 Necesito calma
-</button>
-
-</div>
-
-</div>
-
-</body>
+</div><div class="tarjetas"><a class="tarjeta" href="soli.html">
+<img src="file_00000000a96c720e8732e4b1e31b1b7d.png">
+<div class="nombre">Soli</div>
+<div class="emocion">Alegría</div>
+</a><a class="tarjeta" href="nubita.html">
+<img src="file_00000000221c71f5a82d5fc77a7147cd.png">
+<div class="nombre">Nubita</div>
+<div class="emocion">Preocupación</div>
+</a><a class="tarjeta" href="volqui.html">
+<img src="file_0000000057c8720eb899e42c9569b0ee.png">
+<div class="nombre">Volqui</div>
+<div class="emocion">Enojo</div>
+</a><a class="tarjeta" href="luni.html">
+<img src="file_000000002c1471f592c0e0da16fb556a.png">
+<div class="nombre">Luni</div>
+<div class="emocion">Tristeza</div>
+</a><a class="tarjeta" href="verdi.html">
+<img src="file_000000006854720e90d86e77a8d426ce.png">
+<div class="nombre">Verdi</div>
+<div class="emocion">Calma</div>
+</a></div></div></body>
 </html>
