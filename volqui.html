@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Volqui</title><style>
+
+body{
+margin:0;
+padding:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(#FFD3A5,#FF9A76);
+text-align:center;
+min-height:100vh;
+}
+
+.contenedor{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+color:white;
+font-size:50px;
+}
+
+.personaje{
+width:250px;
+margin:20px auto;
+display:block;
+}
+
+.texto{
+font-size:26px;
+color:white;
+font-weight:bold;
+line-height:1.5;
+}
+
+.opciones{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+button{
+padding:20px;
+border:none;
+border-radius:20px;
+font-size:22px;
+font-weight:bold;
+background:white;
+}
+
+.resultado{
+margin-top:30px;
+font-size:24px;
+font-weight:bold;
+color:white;
+}
+
+.volver{
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:white;
+color:#E86A33;
+text-decoration:none;
+border-radius:20px;
+font-weight:bold;
+}
+
+</style><script>
+
+function responder(texto){
+document.getElementById("resultado").innerHTML=texto;
+}
+
+</script></head><body><div class="contenedor"><h1>🌋 Volqui</h1><img class="personaje"
+src="file_0000000057c8720eb899e42c9569b0ee.png">
+
+<div class="texto">Mi volcán está muy activo.
+
+¿Qué puedo hacer para sentirme mejor?
+
+</div><div class="opciones"><button onclick="responder('🌬️ Respirar es una excelente idea.')">
+Respirar
+</button><button onclick="responder('🏃 Mover el cuerpo ayuda a liberar energía.')">
+Mover el cuerpo
+</button><button onclick="responder('🤝 Pedir ayuda también es una gran opción.')">
+Pedir ayuda
+</button></div><div id="resultado" class="resultado"></div><a class="volver" href="index.html">
+Volver a la Isla
+</a></div></body>
+</html>
